@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.priyampatel.cs478hw1.project1.SecondActivity"
+    tools:showIn="@layout/activity_second">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:maxLines="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Name Here"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <Button
+        android:id="@+id/contactbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        tools:layout_editor_absoluteY="56dp"
+        app:layout_constraintLeft_toRightOf="@+id/editText"
+        android:layout_marginLeft="46dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/contactbutton"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="250dp"
+        android:layout_marginTop="46dp"
+        />
+</android.support.constraint.ConstraintLayout>
